@@ -38,8 +38,29 @@ public class FripperController : MonoBehaviour {
         {
             setAngle(this.defaultAngle);
         }
-	
-	}
+
+        //画面をクリックしたときにフリッパーを動作させる
+        if (Input.GetMouseButton(0))
+        {
+            //画面中央より左側がクリックされたとき
+            if (Input.mousePosition.x < Screen.width / 2 && tag == "LeftFripperTag")
+            {
+                setAngle(this.flickAngle);
+            }
+            //画面中央より右側がクリックされたとき
+            if (Input.mousePosition.x >= Screen.width / 2 && tag == "RightFripperTag")
+            {
+                setAngle(this.flickAngle);
+            }
+        }
+        //クリックが離されたときフリッパーを元に戻す
+        if (!Input.GetMouseButton(0))
+        {
+            setAngle(this.defaultAngle);
+        }
+
+
+    }
 
     //フリッパーの傾きを設定
     public void setAngle (float angle)
