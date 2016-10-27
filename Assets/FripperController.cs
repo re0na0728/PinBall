@@ -54,10 +54,11 @@ public class FripperController : MonoBehaviour {
             }
         }
         //クリックが離されたときフリッパーを元に戻す
-        if (!Input.GetMouseButton(0))
+        if (Input.GetMouseButtonUp(0))
         {
             setAngle(this.defaultAngle);
         }
+
 
 
     }
