@@ -23,6 +23,7 @@ GameObject:
   - 23: {fileID: 23000011407859618}
   - 64: {fileID: 64000012722124840}
   - 114: {fileID: 114000013781429798}
+  - 114: {fileID: 114000011648106046}
   m_Layer: 0
   m_Name: LargeCloudPrefab
   m_TagString: LargeCloudTag
@@ -91,6 +92,17 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 9fc9ac68f1c66f24c80c53eca7d7a647, type: 3}
+--- !u!114 &114000011648106046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012692646042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c5172ed98449f47825ba350dd37dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000013781429798
 MonoBehaviour:
   m_ObjectHideFlags: 1
